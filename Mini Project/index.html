@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #004080;
+        color: white;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .cart {
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    
+    .hero {
+        text-align: center;
+        padding: 2rem;
+        background-color: #f4f4f4;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        color: white;
+        background-color: #004080;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .products {
+        padding: 2rem;
+        background-color: #fff;
+    }
+    
+    .products h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .product-grid {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .product-card {
+        border: 1px solid #ddd;
+        padding: 1rem;
+        border-radius: 5px;
+        text-align: center;
+        width: 200px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-card img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    
+    .product-card button {
+        padding: 0.5rem 1rem;
+        margin-top: 0.5rem;
+        background-color: #004080;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #004080;
+        color: white;
+    }
+    .dropbtn {
+  background-color: #3e288b;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+    </style>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Arpana </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            
+              
+              
+            
+        </nav>
+        <div class="cart">
+            <div class="dropdown" style="float:right;">
+            <button class="dropbtn">🛒Drop down </button>
+                <div class="dropdown-content">
+                <a href="#"> add to cart</a>
+                <a href="#">wishlist</a>
+                <a href="#">log out</a>
+        </div>
+        <script>const buttons = document.querySelectorAll('.product-card button');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    alert('Item added to cart!');
+                });
+            });</script>
+        
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to FlowerHut!</h1>
+        <p>Your one-stop shop for flower you need.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://www.bing.com/th?id=OPAC.IjlP%2f1W3Tt2YQg474C474&o=5&pid=21.1&w=160&h=160&rs=1&qlt=100&dpr=1.5&c=8&pcl=f5f5f5" alt="Poduct 1">
+                <h3>Yellow flower</h3>
+                <p>$10.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.bing.com/th?id=OPAC.fQpzXfDQ9k77KA474C474&o=5&pid=21.1&w=160&h=160&rs=1&qlt=100&dpr=1.5&c=8&pcl=f5f5f5" alt="Product 2">
+                <h3>Red Flower</h3>
+                <p>$20.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.bing.com/th?id=OPAC.3XTXkp4Hq6TJ7A474C474&o=5&pid=21.1&w=160&h=160&rs=1&qlt=100&dpr=1.5&c=8&pcl=f5f5f5" alt="Product 3">
+                <h3>Pink flower </h3>
+                <p>$15.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 FlowerHut. All rights reserved.</p>
+        <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
+ 
